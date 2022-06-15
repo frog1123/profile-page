@@ -1,3 +1,11 @@
+window.onload = () => {
+  setInterval(() => {
+    let emojis = ['🌴', '⭐', '💫', '🐸', '🌱', '🍃', '🍃'];
+
+    document.title = `frogdude1123 ${emojis[Math.floor(Math.random() * (emojis.length + 1))]}`;
+  }, 5000);
+};
+
 const socials = {
   links: {
     youtube: 'https://www.youtube.com/channel/UCNTeMcd7BDOuNrVf1yRGZlA',
