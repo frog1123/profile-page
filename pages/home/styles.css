@@ -1,0 +1,75 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+
+h1,
+h2,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.gradient-text {
+  background: #d9ed92;
+  background: linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+  background: -webkit-linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+  background: -moz-linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  border-style: solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+  border-image-source: -webkit-linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+  border-image-source: -moz-linear-gradient(to right, #d9ed92 0%, #b5e48c 100%);
+}
+
+.container {
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.title-text {
+  font-size: 32px;
+  margin: 0;
+}
+
+#pfp-container {
+  display: grid;
+  place-items: center;
+  grid-template-rows: max-content max-content;
+}
+
+#pfp-container img {
+  border-width: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+#pfp-container h1 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#about-me-text-container {
+  display: grid;
+  place-items: center;
+}
+
+.connection-container {
+}
