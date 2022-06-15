@@ -3,7 +3,7 @@ window.onload = () => {
     let emojis = ['🌴', '💫', '🐸', '🌱', '🍃', '🌲', '🍄', '☃️'];
 
     document.title = `frogdude1123 ${emojis[Math.floor(Math.random() * emojis.length)]}`;
-  }, 100);
+  }, 5000);
 };
 
 const socials = {
