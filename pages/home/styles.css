@@ -1,6 +1,7 @@
 body,
 html {
   padding: 0;
+  padding-bottom: 50px;
   margin: 0;
   background-color: #212121;
 }
@@ -59,7 +60,13 @@ button,
   grid-template-rows: max-content max-content;
 }
 
-#pfp-container img {
+#_pfp {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  grid-gap: 300px;
+}
+
+#pfp-container #_pfp img {
   border-width: 5px;
   width: 200px;
   height: 200px;
@@ -115,4 +122,16 @@ button,
 .connection-container h3 {
   font-size: 26px;
   margin: 0;
+}
+
+#featured-video-container {
+  display: grid;
+  grid-template-columns: 100%;
+  place-items: center;
+}
+
+#featured-video {
+  margin-top: 10px;
+  width: 60%;
+  aspect-ratio: 16/9;
 }
