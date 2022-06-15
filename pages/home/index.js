@@ -1,6 +1,6 @@
 window.onload = () => {
   setInterval(() => {
-    let emojis = ['🌴', '⭐', '💫', '🐸', '🌱', '🍃', '🍃'];
+    let emojis = ['🌴', '💫', '🐸', '🌱', '🍃', '🌲', '🍄', '☃️'];
 
     document.title = `frogdude1123 ${emojis[Math.floor(Math.random() * (emojis.length + 1))]}`;
   }, 5000);
