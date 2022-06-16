@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "concurrently \"npm run watch\" \"npm start\"",
+    "start:prod": "tsc && nodemon dist/index.js",
     "start": "nodemon dist/index.js",
     "watch": "tsc -w"
   },
