@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
+<meta charset=UTF-8>
+<meta content="IE=edge" http-equiv=X-UA-Compatible>
+<meta content="width=device-width,initial-scale=1" name=viewport>
+<title>not found</title>
+<script>window.onload = () => document.getElementById("path-text").innerHTML = window.location.href.replace(/\/index.html/g, '')</script>
+<div id=container><img id=palm-tree>
+  <h1><span class=gradient-text>not found</span></h1>
+  <h2>could not find <span class=gradient-text id=path-text>_</span></h2>
+</div>
+<style>
+  body {
+    background-color: #212121
+  }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>error</title>
-</head>
+  h1,
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0
+  }
 
-<body>
-  <h1>error page</h1>
-</body>
+  #container {
+    text-align: center
+  }
 
-</html>
+  #container h1 {
+    font-size: 100px
+  }
+
+  .gradient-text {
+    background: #d9ed92;
+    background: linear-gradient(to right, #d9ed92 0, #b5e48c 100%);
+    background: -webkit-linear-gradient(to right, #d9ed92 0, #b5e48c 100%);
+    background: -moz-linear-gradient(to right, #d9ed92 0, #b5e48c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+</style>
