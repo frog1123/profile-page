@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang=en>
-<meta charset=UTF-8>
-<meta content="IE=edge" http-equiv=X-UA-Compatible>
-<meta content="width=device-width,initial-scale=1" name=viewport>
+<html lang="en">
+<meta charset="UTF-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1" name="viewport">
 <title>not found</title>
 <script>window.onload = () => document.getElementById("path-text").innerHTML = window.location.href.replace(/\/index.html/g, '')</script>
-<div id=container><img id=palm-tree>
-  <h1><span class=gradient-text>not found</span></h1>
-  <h2>could not find <span class=gradient-text id=path-text>_</span></h2>
+<div id="container">
+  <h1><span class="gradient-text">not found</span></h1>
+  <h2>could not find <span class="gradient-text" id="path-text">_</span></h2>
 </div>
 <style>
   body {
@@ -37,5 +37,25 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent
+  }
+
+  @media screen and (max-width: 600px) {
+    #container h1 {
+      font-size: 65px !important;
+    }
+
+    #container h2 {
+      font-size: 20px !important;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #container h1 {
+      font-size: 40px !important;
+    }
+
+    #container h2 {
+      font-size: 10px !important;
+    }
   }
 </style>
