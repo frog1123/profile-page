@@ -4,7 +4,15 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <title>not found</title>
-<script>window.onload = () => document.getElementById("path-text").innerHTML = window.location.href.replace(/\/index.html/g, '')</script>
+<script>window.onload = () => {
+    const icon = document.createElement('link');
+    icon.rel = 'icon';
+    icon.type = 'image/x-icon';
+    icon.href = `${window.location.origin}/icon`;
+    document.querySelector('head').append(icon);
+
+    document.getElementById("path-text").innerHTML = window.location.href.replace(/\/index.html/g, '')
+  }</script>
 <div id="container">
   <h1><span class="gradient-text">not found</span></h1>
   <h2>could not find <span class="gradient-text" id="path-text">_</span></h2>

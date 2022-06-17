@@ -1,4 +1,10 @@
 window.onload = () => {
+  const icon = document.createElement('link');
+  icon.rel = 'icon';
+  icon.type = 'image/x-icon';
+  icon.href = `${window.location.origin}/icon`;
+  document.querySelector('head').append(icon);
+
   console.log("%c        __ _.--..--._ _\r\n     .-' _/   _/\\_   \\_'-.\r\n    |__ /   _/\\__/\\_   \\__|\r\n       |___/\\_\\__/  \\___|\r\n              \\__/\r\n              \\__/\r\n               \\__/\r\n                \\__/\r\n             ____\\__/___\r\n       . - '             ' -.\r\n      /                      \\\r\n~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~\r\n      ~~~   ~~~~~   ~~~   ~~ ~  ~ ~ ~\n             frogdude1123", 'color: #d9ed92');
   setInterval(() => {
     let emojis = ['🌴', '💫', '🐸', '🌱', '🍃', '🌲', '🍄', '☃️'];

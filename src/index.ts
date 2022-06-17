@@ -9,6 +9,10 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 app.use('/', express.static(path.join(__dirname, '../pages/home')));
 app.use('/home', express.static(path.join(__dirname, '../pages/home')));
 
+app.get('/icon', (req: req, res: res) => {
+  res.sendFile(path.join(__dirname, '../pages/assets/f.ico'));
+});
+
 app.get('*', (req: req, res: res) => {
   res.sendFile(path.join(__dirname, '../pages/error/index.html'));
 });
