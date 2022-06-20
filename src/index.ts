@@ -13,6 +13,10 @@ app.get('/icon', (req: req, res: res) => {
   res.sendFile(path.join(__dirname, '../pages/assets/f.ico'));
 });
 
+app.get('/palm_tree', (req: req, res: res) => {
+  res.sendFile(path.join(__dirname, '../pages/assets/palm_tree.png'));
+});
+
 app.get('*', (req: req, res: res) => {
   res.sendFile(path.join(__dirname, '../pages/error/index.html'));
 });

@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta content="IE=edge" http-equiv="X-UA-Compatible">
-<meta content="width=device-width,initial-scale=1" name="viewport">
-<title>not found</title>
-<script>window.onload = () => {
-    const icon = document.createElement('link');
-    icon.rel = 'icon';
-    icon.type = 'image/x-icon';
-    icon.href = `${window.location.origin}/icon`;
-    document.querySelector('head').append(icon);
 
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link rel="icon" type="image/x-icon" href="https://frogdude1123.herokuapp.com/icon" />
+  <title>not found</title>
+</head>
+
+<script>window.onload = () => {
     document.getElementById("path-text").innerHTML = window.location.href.replace(/\/index.html/g, '')
-  }</script>
-<div id="container">
-  <h1><span class="gradient-text">not found</span></h1>
-  <h2>could not find <span class="gradient-text" id="path-text">_</span></h2>
-</div>
+  }  
+</script>
+
+<body>
+  <div id="container">
+    <h1><span class="gradient-text">not found</span></h1>
+    <h2>could not find <span class="gradient-text" id="path-text">_</span></h2>
+    <img src="https://frogdude1123.herokuapp.com/palm_tree" />
+  </div>
+</body>
+
 <style>
   body {
     background-color: #212121
@@ -37,6 +42,11 @@
     font-size: 100px
   }
 
+  #container img {
+    width: 400px;
+    height: 400px;
+  }
+
   .gradient-text {
     background: #d9ed92;
     background: linear-gradient(to right, #d9ed92 0, #b5e48c 100%);
@@ -55,6 +65,11 @@
     #container h2 {
       font-size: 20px !important;
     }
+
+    #container img {
+      width: 300px;
+      height: 300px;
+    }
   }
 
   @media screen and (max-width: 400px) {
@@ -64,6 +79,11 @@
 
     #container h2 {
       font-size: 10px !important;
+    }
+
+    #container img {
+      width: 200px;
+      height: 200px;
     }
   }
 </style>

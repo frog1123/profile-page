@@ -36,6 +36,11 @@
     font-size: 22px;
   }
 
+  .connection-container img {
+    width: 40px;
+    height: 40px;
+  }
+
   #featured-video {
     width: 80%;
   }
@@ -56,6 +61,11 @@
     grid-template-columns: 100%;
     grid-gap: 10px;
   }
+
+  .connection-container img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -70,11 +80,24 @@
   }
 
   p {
-    font-size: 12px;
+    font-size: 13.5px;
+  }
+
+  .container {
+    margin-top: 10px;
+  }
+
+  #connections-container {
+    grid-gap: 6px;
   }
 
   .connection-container h3 {
     font-size: 16px;
+  }
+
+  .connection-container img {
+    width: 25px;
+    height: 25px;
   }
 
   #featured-video {
